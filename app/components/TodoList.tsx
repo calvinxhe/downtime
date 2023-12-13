@@ -4,7 +4,7 @@ import Task from "./Task";
 
 interface TodoListProps {
   tasks: ITask[];
-}
+} 
 
 const TodoList: React.FC<TodoListProps> = ({ tasks }) => {
   return (

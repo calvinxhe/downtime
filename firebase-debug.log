@@ -1,0 +1,342 @@
+[debug] [2023-12-12T18:09:53.658Z] ----------------------------------------------------------------------
+[debug] [2023-12-12T18:09:53.660Z] Command:       /usr/local/bin/firebase /Users/cal/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-12-12T18:09:53.660Z] CLI Version:   13.0.1
+[debug] [2023-12-12T18:09:53.661Z] Platform:      darwin
+[debug] [2023-12-12T18:09:53.661Z] Node Version:  v18.5.0
+[debug] [2023-12-12T18:09:53.665Z] Time:          Tue Dec 12 2023 13:09:53 GMT-0500 (Eastern Standard Time)
+[debug] [2023-12-12T18:09:53.665Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-12T18:09:53.777Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-12T18:09:53.780Z] > authorizing via signed-in user (info@eastcoastseedcompany.com)
+[debug] [2023-12-12T18:09:53.781Z] [iam] checking project downtimebeta123 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-12T18:09:53.782Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions [none]
+[debug] [2023-12-12T18:09:53.783Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions x-goog-quota-user=projects/downtimebeta123
+[debug] [2023-12-12T18:09:53.784Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-12T18:09:54.278Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions 200
+[debug] [2023-12-12T18:09:54.281Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-12T18:09:54.285Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/downtimebeta123 [none]
+[debug] [2023-12-12T18:09:54.770Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/downtimebeta123 200
+[debug] [2023-12-12T18:09:54.774Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/downtimebeta123 {"projectId":"downtimebeta123","projectNumber":"848473232482","displayName":"downtimebeta123","name":"projects/downtimebeta123","resources":{"hostingSite":"downtimebeta123"},"state":"ACTIVE","etag":"1_d1c2423d-5708-4f5f-8c2d-5a84b69753ff"}
+[debug] [2023-12-12T18:09:57.368Z] defaultcredentials: writing to file /Users/cal/.config/firebase/info_eastcoastseedcompany_com_application_default_credentials.json
+[debug] [2023-12-12T18:09:57.372Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/downtimebeta123/sites pageToken=&pageSize=10
+[debug] [2023-12-12T18:09:58.082Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/downtimebeta123/sites 200
+[debug] [2023-12-12T18:09:58.083Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/downtimebeta123/sites {"sites":[{"name":"projects/downtimebeta123/sites/downtimebeta123","defaultUrl":"https://downtimebeta123.web.app","appId":"1:848473232482:web:6361cf74ec3fc5942f6d3b","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-12T18:09:58.085Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:848473232482:web:6361cf74ec3fc5942f6d3b/config [none]
+[debug] [2023-12-12T18:09:58.697Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:848473232482:web:6361cf74ec3fc5942f6d3b/config 200
+[debug] [2023-12-12T18:09:58.698Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:848473232482:web:6361cf74ec3fc5942f6d3b/config {"projectId":"downtimebeta123","appId":"1:848473232482:web:6361cf74ec3fc5942f6d3b","storageBucket":"downtimebeta123.appspot.com","apiKey":"AIzaSyCJdY3MVs1hrrmSiyGoaz38P8wUXQbYr9o","authDomain":"downtimebeta123.firebaseapp.com","messagingSenderId":"848473232482"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] warn  - You have enabled experimental feature (appDir) in next.config.js.
+warn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.
+
+[info] 
+
+[info] info  - Thank you for testing `appDir` please leave your feedback at https://nextjs.link/app-feedback
+
+[info] info  - Creating an optimized production build...
+
+[info] info  - Using wasm build of next-swc
+
+[info] warn  - Attempted to load @next/swc-darwin-x64, but it was not installed
+
+[info] Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+[info] 
+
+[info] 🌼 daisyUI components 2.51.5  https://daisyui.com
+
+[info]   ✔︎ Including:  base, components, 29 themes, utilities
+
+[info]   ❤︎ Support daisyUI:  https://opencollective.com/daisyui 
+  
+
+[info] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[info] info  - Compiled successfully
+
+[info] info  - Linting and checking validity of types...
+
+[info] Pages directory cannot be found at /Users/cal/Documents/simple-todoapp-with-next13/pages or /Users/cal/Documents/simple-todoapp-with-next13/src/pages. If using a custom path, please configure with the `no-html-link-for-pages` rule in your eslint config file.
+
+[info] 
+./app/components/Timer.tsx
+15:18  Warning: Assignments to the 'interval' variable from inside React Hook useEffect will be lost after each render. To preserve the value over time, store it in a useRef Hook and keep the mutable value in the '.current' property. Otherwise, you can move this variable directly inside useEffect.  react-hooks/exhaustive-deps
+38:6  Warning: React Hook useEffect has a missing dependency: 'handleVisibilityChange'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info] info  - Collecting page data...
+
+[info] info  - Generating static pages (0/3)
+
+[info] Error fetching tasks: DynamicServerError: Dynamic server usage: no-store fetch http://localhost:3001/tasks /page
+    at /Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/server/lib/patch-fetch.js:190:33
+    at /Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/server/lib/trace/tracer.js:106:62
+    at /Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/server/lib/trace/tracer.js:66:32
+    at NoopContextManager.with (/Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7054)
+    at ContextAPI.with (/Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:517)
+    at NoopTracer.startActiveSpan (/Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18022)
+    at ProxyTracer.startActiveSpan (/Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18782)
+    at runWithContext (/Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/server/lib/trace/tracer.js:60:164)
+    at NextTracerImpl.trace (/Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/server/lib/trace/tracer.js:61:16)
+    at /Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/server/lib/trace/tracer.js:106:31 {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+
+[info] [DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+[info] Error fetching tasks: DynamicServerError: Dynamic server usage: no-store fetch http://localhost:3001/tasks /page
+    at /Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/server/lib/patch-fetch.js:190:33
+    at /Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/server/lib/trace/tracer.js:106:62
+    at /Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/server/lib/trace/tracer.js:66:32
+    at NoopContextManager.with (/Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7054)
+    at ContextAPI.with (/Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:517)
+    at NoopTracer.startActiveSpan (/Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18022)
+    at ProxyTracer.startActiveSpan (/Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18782)
+    at runWithContext (/Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/server/lib/trace/tracer.js:60:164)
+    at NextTracerImpl.trace (/Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/server/lib/trace/tracer.js:61:16)
+    at /Users/cal/Documents/simple-todoapp-with-next13/node_modules/next/dist/server/lib/trace/tracer.js:106:31 {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+
+[info] info  - Generating static pages (3/3)
+
+[info] info  - Finalizing page optimization...
+
+[info] 
+
+[info] Route (app)                                Size     First Load JS
+─ λ /                                      6.06 kB        74.7 kB
++ First Load JS shared by all              68.7 kB
+  ├ chunks/455-3cd31f2932b09e16.js         66.4 kB
+  ├ chunks/main-app-fcefa1b34dc882ea.js    203 B
+  └ chunks/webpack-56a2b541648bf0d5.js     2.04 kB
+
+Route (pages)                              Size     First Load JS
+─ ○ /404                                   179 B          84.5 kB
++ First Load JS shared by all              84.3 kB
+  ├ chunks/main-d4a16b29e304333c.js        82.1 kB
+  ├ chunks/pages/_app-907dedfd0e4177db.js  192 B
+  └ chunks/webpack-56a2b541648bf0d5.js     2.04 kB
+
+
+[info] λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /page
+[info] 
+[debug] [2023-12-12T18:10:50.285Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:820:11)
+    at Object.execSync (node:child_process:891:15)
+    at execSync (pkg/prelude/bootstrap.js:2111:30)
+    at prepareFrameworks (/Users/cal/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:367:42)
+    at async deploy (/Users/cal/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-12-12T18:14:31.801Z] ----------------------------------------------------------------------
+[debug] [2023-12-12T18:14:31.803Z] Command:       /usr/local/bin/firebase /Users/cal/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-12-12T18:14:31.803Z] CLI Version:   13.0.1
+[debug] [2023-12-12T18:14:31.804Z] Platform:      darwin
+[debug] [2023-12-12T18:14:31.804Z] Node Version:  v18.5.0
+[debug] [2023-12-12T18:14:31.811Z] Time:          Tue Dec 12 2023 13:14:31 GMT-0500 (Eastern Standard Time)
+[debug] [2023-12-12T18:14:31.811Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-12T18:14:31.917Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-12T18:14:31.919Z] > authorizing via signed-in user (info@eastcoastseedcompany.com)
+[debug] [2023-12-12T18:14:31.920Z] [iam] checking project downtimebeta123 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-12T18:14:31.922Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions [none]
+[debug] [2023-12-12T18:14:31.922Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions x-goog-quota-user=projects/downtimebeta123
+[debug] [2023-12-12T18:14:31.923Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-12T18:14:32.258Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions 200
+[debug] [2023-12-12T18:14:32.261Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-12T18:14:32.264Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/downtimebeta123 [none]
+[debug] [2023-12-12T18:14:32.770Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/downtimebeta123 200
+[debug] [2023-12-12T18:14:32.772Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/downtimebeta123 {"projectId":"downtimebeta123","projectNumber":"848473232482","displayName":"downtimebeta123","name":"projects/downtimebeta123","resources":{"hostingSite":"downtimebeta123"},"state":"ACTIVE","etag":"1_d1c2423d-5708-4f5f-8c2d-5a84b69753ff"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] warn  - You have enabled experimental feature (appDir) in next.config.js.
+
+[info] warn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.
+
+
+[info] info  - Thank you for testing `appDir` please leave your feedback at https://nextjs.link/app-feedback
+
+[info] info  - Creating an optimized production build...
+
+[info] info  - Using wasm build of next-swc
+
+[info] warn  - Attempted to load @next/swc-darwin-x64, but it was not installed
+
+[info] Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+[info] 
+🌼 daisyUI components 2.51.5  https://daisyui.com
+
+[info]   ✔︎ Including:  base, components, 29 themes, utilities
+
+[info]   ❤︎ Support daisyUI:  https://opencollective.com/daisyui 
+  
+
+[info] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[info] info  - Compiled successfully
+
+[info] info  - Linting and checking validity of types...
+
+[info] Pages directory cannot be found at /Users/cal/Documents/simple-todoapp-with-next13/pages or /Users/cal/Documents/simple-todoapp-with-next13/src/pages. If using a custom path, please configure with the `no-html-link-for-pages` rule in your eslint config file.
+
+[info] 
+./app/components/Timer.tsx
+15:18  Warning: Assignments to the 'interval' variable from inside React Hook useEffect will be lost after each render. To preserve the value over time, store it in a useRef Hook and keep the mutable value in the '.current' property. Otherwise, you can move this variable directly inside useEffect.  react-hooks/exhaustive-deps
+38:6  Warning: React Hook useEffect has a missing dependency: 'handleVisibilityChange'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info] Failed to compile.
+
+
+[info] ./zustand-store.ts:2:20
+Type error: Cannot find module 'zustand' or its corresponding type declarations.
+
+  1 | // store.ts
+> 2 | import create from 'zustand';
+    |                    ^
+  3 | import { ITask } from '@/types/tasks'; // Adjust the import path as necessary
+  4 | 
+  5 | interface TaskState {
+
+[debug] [2023-12-12T18:14:54.276Z] Error: ENOENT: no such file or directory, open '/Users/cal/Documents/simple-todoapp-with-next13/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-12-12T18:15:18.779Z] ----------------------------------------------------------------------
+[debug] [2023-12-12T18:15:18.781Z] Command:       /usr/local/bin/firebase /Users/cal/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-12-12T18:15:18.782Z] CLI Version:   13.0.1
+[debug] [2023-12-12T18:15:18.782Z] Platform:      darwin
+[debug] [2023-12-12T18:15:18.782Z] Node Version:  v18.5.0
+[debug] [2023-12-12T18:15:18.787Z] Time:          Tue Dec 12 2023 13:15:18 GMT-0500 (Eastern Standard Time)
+[debug] [2023-12-12T18:15:18.787Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-12T18:15:18.888Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-12T18:15:18.891Z] > authorizing via signed-in user (info@eastcoastseedcompany.com)
+[debug] [2023-12-12T18:15:18.892Z] [iam] checking project downtimebeta123 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-12T18:15:18.893Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions [none]
+[debug] [2023-12-12T18:15:18.894Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions x-goog-quota-user=projects/downtimebeta123
+[debug] [2023-12-12T18:15:18.895Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-12T18:15:19.329Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions 200
+[debug] [2023-12-12T18:15:19.332Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/downtimebeta123:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-12T18:15:19.335Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/downtimebeta123 [none]
+[debug] [2023-12-12T18:15:19.557Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/downtimebeta123 200
+[debug] [2023-12-12T18:15:19.561Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/downtimebeta123 {"projectId":"downtimebeta123","projectNumber":"848473232482","displayName":"downtimebeta123","name":"projects/downtimebeta123","resources":{"hostingSite":"downtimebeta123"},"state":"ACTIVE","etag":"1_d1c2423d-5708-4f5f-8c2d-5a84b69753ff"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] warn  - You have enabled experimental feature (appDir) in next.config.js.
+
+[info] warn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use at your own risk.
+
+
+[info] info  - Thank you for testing `appDir` please leave your feedback at https://nextjs.link/app-feedback
+
+[info] info  - Creating an optimized production build...
+
+[info] info  - Using wasm build of next-swc
+
+[info] warn  - Attempted to load @next/swc-darwin-x64, but it was not installed
+
+[info] Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+[info] 
+
+[info] 🌼 daisyUI components 2.51.5  https://daisyui.com
+
+[info]   ✔︎ Including:  base, components, 29 themes, utilities
+
+[info]   ❤︎ Support daisyUI:  https://opencollective.com/daisyui 
+  
+
+[info] info  - Compiled successfully
+
+[info] info  - Linting and checking validity of types...
+
+[info] 
+./app/components/Timer.tsx
+15:18  Warning: Assignments to the 'interval' variable from inside React Hook useEffect will be lost after each render. To preserve the value over time, store it in a useRef Hook and keep the mutable value in the '.current' property. Otherwise, you can move this variable directly inside useEffect.  react-hooks/exhaustive-deps
+38:6  Warning: React Hook useEffect has a missing dependency: 'handleVisibilityChange'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info] info  - Collecting page data...
+
+[info] info  - Generating static pages (0/3)
+
+[info] info  - Generating static pages (3/3)
+
+[info] info  - Finalizing page optimization...
+
+[info] 
+
+[info] Route (app)                                Size     First Load JS
+─ λ /                                      3.43 kB        72.1 kB
++ First Load JS shared by all              68.7 kB
+  ├ chunks/455-d01bac480ed9b653.js         66.4 kB
+  ├ chunks/main-app-40c42d5f4391ad3c.js    203 B
+  └ chunks/webpack-555a7c045fddce32.js     2.04 kB
+
+Route (pages)                              Size     First Load JS
+─ ○ /404                                   179 B          84.5 kB
++ First Load JS shared by all              84.3 kB
+  ├ chunks/main-d4a16b29e304333c.js        82.1 kB
+  ├ chunks/pages/_app-907dedfd0e4177db.js  192 B
+  └ chunks/webpack-555a7c045fddce32.js     2.04 kB
+
+
+[info] λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /page
+[info] 
+[debug] [2023-12-12T18:16:06.686Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:820:11)
+    at Object.execSync (node:child_process:891:15)
+    at execSync (pkg/prelude/bootstrap.js:2111:30)
+    at prepareFrameworks (/Users/cal/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:367:42)
+    at async deploy (/Users/cal/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.

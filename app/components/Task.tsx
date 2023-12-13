@@ -10,7 +10,7 @@ import { deleteTodo, editTodo } from "@/api";
 interface TaskProps {
   task: ITask;
 }
-
+ 
 const Task: React.FC<TaskProps> = ({ task }) => {
   const router = useRouter();
   const [openModalEdit, setOpenModalEdit] = useState<boolean>(false);
