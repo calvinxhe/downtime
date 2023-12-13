@@ -2,6 +2,7 @@ import { getAllTodos } from "@/api";
 import AddTask from "./components/AddTask";
 import TodoList from "./components/TodoList";
 import Timer from "./components/Timer";
+import FetchEmailsButton from "./components/fetch-email";
 
 export default async function Home() {
   const tasks = await getAllTodos();
@@ -11,6 +12,7 @@ export default async function Home() {
       <div className='text-center my-5 flex flex-col gap-4'>
         <h1 className='text-2xl font-bold'>Downtime</h1>
         <Timer />
+        <FetchEmailsButton />
         <AddTask />
       </div>
       <TodoList tasks={tasks} />
