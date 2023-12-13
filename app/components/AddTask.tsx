@@ -1,23 +1,28 @@
-"use client";
+"use client"
 
+import React, { useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import Modal from "./Modal";
-import { FormEventHandler, useState } from "react";
-import { addTodo } from "@/api";
 import { useRouter } from "next/navigation";
 import { v4 as uuidv4 } from "uuid";
- 
+import useStores from "@/zustand-store";
+
 const AddTask = () => {
   const router = useRouter();
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [newTaskValue, setNewTaskValue] = useState<string>("");
 
-  const handleSubmitNewTodo: FormEventHandler<HTMLFormElement> = async (e) => {
+  const addTask = useStores((state) => state.addTask);
+
+  const handleSubmitNewTodo = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    await addTodo({
+    const newTask = {
       id: uuidv4(),
       text: newTaskValue,
-    });
+      isDone: false // Assuming your task structure has an isDone property
+    };
+
+    addTask(newTask);
     setNewTaskValue("");
     setModalOpen(false);
     router.refresh();

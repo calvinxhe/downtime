@@ -1,12 +1,14 @@
 {
   "tasks": [
     {
-      "id": "4",
-      "text": "go to market"
+      "id": "1",
+      "text": "Truly Humble Under God",
+      "isDone": false
     },
     {
-      "id": "5",
-      "text": "learn math"
+      "id": "2",
+      "text": "Pushing positivity",
+      "isDone": false
     }
   ]
 }
